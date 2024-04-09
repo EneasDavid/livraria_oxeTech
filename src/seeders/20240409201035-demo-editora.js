@@ -1,5 +1,7 @@
 'use strict';
 
+const { query } = require('express');
+
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
@@ -12,6 +14,13 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
+   await queryInterface.bulkInsert('Editoras', [
+    {
+      Id:1,
+      nomeFantasia: 'Editora 1',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    }],{});
   },
 
   async down (queryInterface, Sequelize) {

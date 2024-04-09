@@ -12,6 +12,15 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
+   await queryInterface.bulkInsert('usuarios',[
+    {
+      Id: 1,
+      Nome: 'Enéas FODA',
+      Senha:'eneas_MUITO_foda',
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    }
+   ]);
   },
 
   async down (queryInterface, Sequelize) {
