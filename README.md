@@ -62,6 +62,10 @@ npx sequelize-cli model:generate --name Editora --attributes nomeFantasia:string
 npx sequelize-cli model:generate --name Livro --attributes titulo:string,qtnPagina:number,id_Editora:number,id_criador:number,id_categoria:number,id_autor:number
 ```
 > - Para criar um model de livro
+```
+npx sequelize-cli db:migrate
+```
+> - Para criar as tabelas no banco
 
 - POPULANDO O BANCO
 ```

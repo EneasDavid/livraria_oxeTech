@@ -1,8 +1,11 @@
 const express = require('express');
-const autor = require('./autorRoutes.js');
+const autorRoutes = require('./autorRoutes.js');
+const categoriaRoutes = require('./categoriaRoutes.js');
 
-const routes = (app) =>{
-    app.use(express.json()),
-    app.use(autor)
-}
-module.exports = routes
+const routes = (app) => {
+    app.use(express.json());
+    app.use(autorRoutes);
+    app.use(categoriaRoutes);
+};
+
+module.exports = routes;

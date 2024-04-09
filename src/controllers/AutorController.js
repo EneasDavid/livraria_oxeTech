@@ -1,13 +1,10 @@
-const database = require('../models');
+const Controller = require('./Controller.js');
+const AutorServices = require('../services/AutorService.js');
+const autorServices = new AutorServices();
 
-class AutorController {
-    static async pegaTodos (req, res) {
-        try {
-            const listaDeAutores = await database.Autor.findAll();
-            return res.status(200).json(listaDeAutores);
-        } catch (erro) {
-            return res.status(500).json(erro.message);
-        }
+class AutorController extends Controller {
+    constructor(){
+        super(autorServices);
     }
 }
-module.exports = AutorController
+module.exports = AutorController;
