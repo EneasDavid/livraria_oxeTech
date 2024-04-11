@@ -6,16 +6,20 @@ module.exports = (sequelize, DataTypes) => {
   class Livro extends Model {
     static associate(models) {
       Livro.belongsTo(models.Editora, {
-        foreignKey: 'id_editora'
+        foreignKey: 'id_editora',
+        as: 'editoras'
       });
       Livro.belongsTo(models.Usuario, {
-        foreignKey: 'id_criador'
+        foreignKey: 'id_criador',
+        as: 'usuarios'
       });
       Livro.belongsTo(models.Categoria, {
-        foreignKey: 'id_categoria'
+        foreignKey: 'id_categoria',
+        as: 'categorias'
       });
       Livro.belongsTo(models.Autor, {
-        foreignKey: 'id_autor'
+        foreignKey: 'id_autor',
+        as: 'autores'
       });
       
     }

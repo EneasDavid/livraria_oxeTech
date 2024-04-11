@@ -18,22 +18,22 @@ module.exports = {
       id_editora: {
         allowNull: false,
         type: Sequelize.INTEGER,
-        references: { model: 'editora', key: 'id' }
+        references: { model: 'editoras', key: 'id' }
       },
       id_categoria: {
         allowNull: false,
         type: Sequelize.INTEGER,
-        references: { model: 'categoria', key: 'id' }
+        references: { model: 'categorias', key: 'id' }
       },
       id_criador: {
         allowNull: false,
         type: Sequelize.INTEGER,
-        references: { model: 'criador', key: 'id' }
+        references: { model: 'usuarios', key: 'id' }
       },      
       id_autor: {
         allowNull: false,
         type: Sequelize.INTEGER,
-        references: { model: 'autor', key: 'id' }
+        references: { model: 'autores', key: 'id' }
       },
       createdAt: {
         allowNull: false,
