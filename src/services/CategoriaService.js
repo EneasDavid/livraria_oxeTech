@@ -2,7 +2,7 @@ const Services = require('./Services.js');
 
 class CategoriaService extends Services{
     constructor(){
-        super('categorias'); //nome da tabela no banco de dadosa
+        super('Categoria'); //nome da tabela no banco de dadosa
     }
 }
 

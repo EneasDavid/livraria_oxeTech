@@ -5,88 +5,71 @@ module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert('editoras',[
       {
-        Id: 1,
-        Nome: 'Ateliê Editorial',
+        nomeFantasia: 'Ateliê Editorial',
         createdAt: new Date(),
         updatedAt: new Date(),
     },{
-        Id: 2,
-        Nome: 'Martins Fontes',
+        nomeFantasia: 'Martins Fontes',
         createdAt: new Date(),
         updatedAt: new Date(),
     },{
-        Id: 3,
-        Nome: 'Rocco',
+        nomeFantasia: 'Rocco',
         createdAt: new Date(),
         updatedAt: new Date(),
     },{
-        Id: 4,
-        Nome: 'Grupo Companhia das Letras',
+        nomeFantasia: 'Grupo Companhia das Letras',
         createdAt: new Date(),
         updatedAt: new Date(),
     },{
-        Id: 5,
-        Nome: 'Grupo Editorial Record',
+        nomeFantasia: 'Grupo Editorial Record',
         createdAt: new Date(),
         updatedAt: new Date(),
     },{
-        Id: 6,
-        Nome: 'Martin Claret',
+        nomeFantasia: 'Martin Claret',
         createdAt: new Date(),
         updatedAt: new Date(),
     },{
-        Id: 7,
-        Nome: 'Alfaguara',
+        nomeFantasia: 'Alfaguara',
         createdAt: new Date(),
         updatedAt: new Date(),
     },{
-        Id: 8,
-        Nome: 'Casa das Letras',
+        nomeFantasia: 'Casa das Letras',
         createdAt: new Date(),
         updatedAt: new Date(),
     },{
-        Id: 9,
-        Nome: 'L&PM',
+        nomeFantasia: 'L&PM',
         createdAt: new Date(),
         updatedAt: new Date(),
     },{
-        Id: 10,
-        Nome: 'Suma',
+        nomeFantasia: 'Suma',
         createdAt: new Date(),
         updatedAt: new Date(),
     },{
-        Id: 11,
-        Nome: 'Emece',
+        nomeFantasia: 'Emece',
         createdAt: new Date(),
         updatedAt: new Date(),
     },{
-        Id: 12,
-        Nome: 'Objetiva',
+        nomeFantasia: 'Objetiva',
         createdAt: new Date(),
         updatedAt: new Date(),
     },{
-        Id: 13,
-        Nome: 'Editorial Record Ltda',
+        nomeFantasia: 'Editorial Record Ltda',
         createdAt: new Date(),
         updatedAt: new Date(),
     },{
-        Id: 14,
-        Nome: 'Planeta',
+        nomeFantasia: 'Planeta',
         createdAt: new Date(),
         updatedAt: new Date(),
     },{
-        Id: 15,
-        Nome: 'Sextante',
+        nomeFantasia: 'Sextante',
         createdAt: new Date(),
         updatedAt: new Date(),
     },{
-        Id: 16,
-        Nome: 'Editora Arqueiro',
+        nomeFantasia: 'Editora Arqueiro',
         createdAt: new Date(),
         updatedAt: new Date(),
     },{
-        Id: 17,
-        Nome: 'Editora Gutenberg',
+        nomeFantasia: 'Editora Gutenberg',
         createdAt: new Date(),
         updatedAt: new Date(),
     }

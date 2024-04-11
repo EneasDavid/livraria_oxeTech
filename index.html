@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enéas é foda</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20vh; /* Ajusta a margem superior para centralizar verticalmente */
+        }
+        .greeting {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enéas é foda</h1>
+    <p class="greeting" id="greeting"></p>
+
+    <script>
+        const now = new Date();
+        const hour = now.getHours();
+
+        let greeting;
+        if (hour >= 5 && hour < 12) {
+            greeting = 'Bom dia';
+        } else if (hour >= 12 && hour < 18) {
+            greeting = 'Boa tarde';
+        } else {
+            greeting = 'Boa noite';
+        }
+        greeting+=' família!'
+        document.getElementById('greeting').textContent = greeting;
+    </script>
+</body>
+</html>

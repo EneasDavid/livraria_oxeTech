@@ -15,7 +15,7 @@ module.exports = {
       qtnPagina: {
         type: Sequelize.NUMBER
       },
-      id_Editora: {
+      id_editora: {
         allowNull: false,
         type: Sequelize.INTEGER,
         references: { model: 'editora', key: 'id' }

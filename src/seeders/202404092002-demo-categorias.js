@@ -5,62 +5,52 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.bulkInsert('categorias', [
       {
-        Id: 1,
-        Categoria: 'Romance',
+        categoria: 'Romance',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        Id: 2,
-        Categoria: 'Suspense',
+        categoria: 'Suspense',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        Id: 3,
-        Categoria: 'Ficção',
+        categoria: 'Ficção',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        Id: 4,
-        Categoria: 'Contos',
+        categoria: 'Contos',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        Id: 5,
-        Categoria: 'Poesia',
+        categoria: 'Poesia',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        Id: 6,
-        Categoria: 'Autoajuda',
+        categoria: 'Autoajuda',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        Id: 7,
-        Categoria: 'Drama',
+        categoria: 'Drama',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        Id: 8,
-        Categoria: 'Fantasia',
+        categoria: 'Fantasia',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        Id: 9,
-        Categoria: 'Terror',
+        categoria: 'Terror',
         createdAt: new Date(),
         updatedAt: new Date(),
       },
       {
-        Id: 10,
-        Categoria: 'Biografia',
+        categoria: 'Biografia',
         createdAt: new Date(),
         updatedAt: new Date(),
       }
