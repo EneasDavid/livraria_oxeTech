@@ -11,15 +11,7 @@ class Controller {
            return res.status(500).json(erro.message);
         }
     }
-    async pegaPorId(req, res) {
-        const id = req.params.id;
-        try {
-            const registro = await this.entidadeService.pegaUmRegistro(Number(id));
-            return res.status(200).json(registro);
-        } catch (erro) {
-           return res.status(500).json(erro.message);
-        }
-    }
+    
     async cria(req,res){
         const novoRegistro = req.body;
         try{
@@ -50,6 +42,16 @@ class Controller {
             return res.status(200).json({mensagem:`id ${id} deletado`});
         }catch(erro){
             return res.status(500).json(erro.message);
+        }
+    }
+    
+    async pegaPorId(req, res) {
+        const id = req.params.id;
+        try {
+            const registro = await this.entidadeService.pegaUmRegistro(Number(id));
+            return res.status(200).json(registro);
+        } catch (erro) {
+           return res.status(500).json(erro.message);
         }
     }
 }

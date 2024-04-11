@@ -35,6 +35,15 @@ git clone https://github.com/EneasDavid/livraria_oxeTech
 npm run dev
 ```
 > - Para inicializar o projeto e deixar ele rodadndo
+```
+npm install sequeliza sequelize-cli sqlite3
+```
+> - Para instalar o sequelize do projeto
+```
+npm rebuild sqlite3
+```
+> - Para garantir que o sequelize do projeto está configurado para SO
+
 - CRIANDO MODELOS
 - NOTA: lembre-se de adicionar o tableName:"nomeTableNoPlural"
 
@@ -59,7 +68,7 @@ npx sequelize-cli model:generate --name Editora --attributes nomeFantasia:string
 > - Para criar um model de Editora
 
 ```
-npx sequelize-cli model:generate --name Livro --attributes titulo:string,qtnPagina:number,id_Editora:number,id_criador:number,id_categoria:number,id_autor:number
+npx sequelize-cli model:generate --name Livro --attributes titulo:string,qtnPagina:number,id_editora:number id_criador:number,id_categoria:number,id_autor:number
 ```
 > - Para criar um model de livro
 ```

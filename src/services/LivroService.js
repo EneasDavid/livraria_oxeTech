@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-const Service=require('./Services.js');
-class LivroService extends Service{
-    constructor(){
-        super('Livro');
-    }
-}
-module.exports=LivroService;
-=======
 const Services = require('./Services.js');
 
 class LivroService extends Services {
@@ -15,4 +6,3 @@ class LivroService extends Services {
     }
 }
 module.exports = LivroService;
->>>>>>> frontEndByEneas

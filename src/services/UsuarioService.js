@@ -1,8 +1,8 @@
-const Service=require('./Services.js');
+const Services = require('./Services.js');
 
-class UsuarioService extends Service{
-    constructor(){
-        super('Usuario');
+class UsuarioService extends Services {
+    constructor() {
+        super('Usuario'); //nome da tabela no banco de dadosa
     }
 }
-module.exports=UsuarioService;
+module.exports = UsuarioService;

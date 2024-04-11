@@ -17,23 +17,23 @@
     </style>
 </head>
 <body>
-    <h1>Enéas é foda</h1>
-    <p class="greeting" id="greeting"></p>
-
+    <h1 class="greeting" id="greeting"></h1>
     <script>
         const now = new Date();
         const hour = now.getHours();
 
         let greeting;
         if (hour >= 5 && hour < 12) {
-            greeting = 'Bom dia!';
+            greeting = 'Bom dia,';
         } else if (hour >= 12 && hour < 18) {
-            greeting = 'Boa tarde!';
+            greeting = 'Boa tarde,';
         } else {
-            greeting = 'Boa noite!';
+            greeting = 'Boa noite,';
         }
-
+        greeting+=' família!'
         document.getElementById('greeting').textContent = greeting;
     </script>
+    <p>Tudo okei!</p>
+    <footer style>PROJETO LIVRARIA OXETECH <strong><br><a style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" href="https://github.com/EneasDavid/livraria_oxeTech">REPOSITORIO</a></strong></footer>
 </body>
 </html>
