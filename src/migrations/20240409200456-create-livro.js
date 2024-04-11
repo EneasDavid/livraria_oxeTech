@@ -16,16 +16,24 @@ module.exports = {
         type: Sequelize.NUMBER
       },
       id_Editora: {
-        type: Sequelize.NUMBER
-      },
-      id_criador: {
-        type: Sequelize.NUMBER
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'editora', key: 'id' }
       },
       id_categoria: {
-        type: Sequelize.NUMBER
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'categoria', key: 'id' }
       },
+      id_criador: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'criador', key: 'id' }
+      },      
       id_autor: {
-        type: Sequelize.NUMBER
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: { model: 'autor', key: 'id' }
       },
       createdAt: {
         allowNull: false,
