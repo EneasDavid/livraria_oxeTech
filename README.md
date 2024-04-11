@@ -35,6 +35,15 @@ git clone https://github.com/EneasDavid/livraria_oxeTech
 npm run dev
 ```
 > - Para inicializar o projeto e deixar ele rodadndo
+```
+npm install sequeliza sequelize-cli sqlite3
+```
+> - Para instalar o sequelize do projeto
+```
+npm rebuild sqlite3
+```
+> - Para garantir que o sequelize do projeto está configurado para SO
+
 - CRIANDO MODELOS
 - NOTA: lembre-se de adicionar o tableName:"nomeTableNoPlural"
 
