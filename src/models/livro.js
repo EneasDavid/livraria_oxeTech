@@ -31,7 +31,7 @@ module.exports = (sequelize, DataTypes) => {
     id_criador: DataTypes.NUMBER,
     id_categoria: DataTypes.NUMBER,
     id_autor: DataTypes.NUMBER
-  }, {
+  }, { 
     sequelize,
     modelName: 'Livro',
     tableName:"livros",
