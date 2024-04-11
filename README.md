@@ -4,7 +4,7 @@
 | -------| --------------------- | --------- |
 |Enéas |  Ciência da computaçao | Back End |
 |Mariah |  Engenharia da Ciência | Database Administrator |
-|Gustavo |  Engenharia da Ciência | Front End |
+|Gustavo |  Engenharia da Ciência | Quality Assurance Analyst |
 
 Este projeto tem como objetivo a construção de uma livraria utilizando a arquitetura MVC (Model-View-Controller) com JavaScript, integrado ao framework Express e Sequelize (ORM que auxilia a criação de projetos seguindo a arquitetura MVC através de uma integração simplificada com o banco de dados e o back end).
 
